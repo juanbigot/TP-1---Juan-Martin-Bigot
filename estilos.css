@@ -148,7 +148,9 @@ footer {
 }
 
 .redes img{
+    width: 40px;
     margin: 8px;
+    height: auto;
 }
 
 /*Textos*/
@@ -204,6 +206,11 @@ h1, h2 {
 
     footer {
         height: auto;
+    }
+
+    .footer img {
+    width: 30px;
+    height: auto;
     }
 
 }
