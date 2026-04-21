@@ -14,6 +14,15 @@ main {
     margin: 0 auto;
 }
 
+h1, h2 {
+    font-family: "Montserrat", sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+p{
+    font-size: 20px;
+}
 /*Menu de navegacion*/
 
 nav {
@@ -44,7 +53,7 @@ nav li {
 nav a {
 text-decoration: none;
 color: black;
-font-size: 20px;
+font-size: 16px;
 }
 
 nav li:hover {
@@ -73,7 +82,6 @@ section{
      max-width: 500px;
      text-align: left;
      color: #FFFFFF;
-     font-size: 24px;
 }
 
 .presentacion img {
@@ -84,7 +92,6 @@ section{
 
 .software {
     background-color: #151515;
-    
 }
 
 .grilla {
@@ -106,6 +113,7 @@ section{
     color: black;
     font-weight: 500;
     margin-top: 10px;
+    font-weight: bold;
 }
 
 /*tercera seccion*/
@@ -132,7 +140,6 @@ margin: 20px 10px;
 
 .caja-proyecto p {
     color: black;
-    font-size: 20px;
     padding: 24px;
 }
 
@@ -154,13 +161,6 @@ footer {
     height: auto;
 }
 
-/*Textos*/
-
-h1, h2 {
-    font-family: "Montserrat", sans-serif;
-    color: #FFFFFF;
-    text-align: center;
-}
 
 
 @media (max-width: 600px) {
@@ -169,34 +169,22 @@ h1, h2 {
         max-width: 100%;
     }
 
-
     nav {
         display: none;
-    }
-
-     nav li {
-        padding: 14px;
-        font-size: 16px;
     }
     
     section {
         height: auto;
     }
 
-
     .presentacion {
         flex-direction: column;
         gap: 24px;
     }
 
-    .presentacion p {
+    .presentacion p, img {
      max-width: 80%;
-     font-size: 20px;
 }
-
-    .presentacion img {
-        width: 80%;
-    }
 
     .grilla {
         padding: 24px;
@@ -208,7 +196,11 @@ h1, h2 {
     }
 
     .grilla-proyectos {
-        grid-template-columns: repeat(1, 60%);
+        grid-template-columns: repeat(1, 70%);
+           
+    }
+    .grilla-proyectos img {
+        margin: 40px;
     }
 
     footer {
