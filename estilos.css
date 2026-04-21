@@ -2,9 +2,9 @@
 
 
 body {
-background-color: rgb(124, 122, 122);
-font-family: "Inter", sans-serif;
-margin: 0%;
+    background-color: rgb(124, 122, 122);
+    font-family: "Inter", sans-serif;
+    margin: 0%;
 }
 
 main {
@@ -14,15 +14,17 @@ main {
     margin: 0 auto;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-family: "Montserrat", sans-serif;
     color: #FFFFFF;
     text-align: center;
 }
 
-p{
+p {
     font-size: 20px;
 }
+
 /*Menu de navegacion*/
 
 nav {
@@ -51,9 +53,9 @@ nav li {
 }
 
 nav a {
-text-decoration: none;
-color: black;
-font-size: 16px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
 }
 
 nav li:hover {
@@ -62,26 +64,26 @@ nav li:hover {
 
 /*Divisiones*/
 
-section{
-   height: 500px;
-   width: 100%;
-   padding: 36px 0;
+section {
+    height: 500px;
+    width: 100%;
+    padding: 36px 0;
 }
 
 /*primera seccion*/
 
 .presentacion {
-     display: flex;
-     align-items: center;
+    display: flex;
+    align-items: center;
     justify-content: center;
     gap: 80px;
     padding: 36px 0;
 }
 
 .presentacion p {
-     max-width: 500px;
-     text-align: left;
-     color: #FFFFFF;
+    max-width: 500px;
+    text-align: left;
+    color: #FFFFFF;
 }
 
 .presentacion img {
@@ -131,7 +133,7 @@ section{
 .caja-proyecto {
     background-color: #e4e4e4;
     border-radius: 8px;
-margin: 20px 10px;
+    margin: 20px 10px;
 }
 
 .caja-proyecto img {
@@ -144,7 +146,7 @@ margin: 20px 10px;
 }
 
 /*Ultima seccion*/
-footer { 
+footer {
     height: 150px;
     padding: 30px 0;
     background-color: #151515;
@@ -155,7 +157,7 @@ footer {
     justify-content: center;
 }
 
-.redes img{
+.redes img {
     width: 35px;
     margin: 8px;
     height: auto;
@@ -165,16 +167,20 @@ footer {
 
 @media (max-width: 600px) {
 
-    main{
+    main {
         max-width: 100%;
     }
 
     nav {
         display: none;
     }
-    
+
     section {
         height: auto;
+    }
+
+    p {
+        font-size: 16px;
     }
 
     .presentacion {
@@ -182,23 +188,23 @@ footer {
         gap: 24px;
     }
 
-    .presentacion p, img {
-     max-width: 80%;
-}
+    .presentacion p,
+    img {
+        max-width: 80%;
+    }
 
     .grilla {
         padding: 24px;
         grid-template-columns: repeat(2, 40%);
     }
 
-    .caja p{
-        font-size: 20px;
-    }
+
 
     .grilla-proyectos {
         grid-template-columns: repeat(1, 70%);
-           
+
     }
+
     .grilla-proyectos img {
         margin: 40px;
     }
@@ -208,8 +214,8 @@ footer {
     }
 
     .footer img {
-    width: 30px;
-    height: auto;
+        width: 30px;
+        height: auto;
     }
 
 }
